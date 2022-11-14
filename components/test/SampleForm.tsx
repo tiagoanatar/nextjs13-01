@@ -13,7 +13,8 @@ export const SampleForm = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setTasks((prev) => ({...prev, formData}))
+    console.log(formData)
+    setTasks((prev) => ([...prev, formData]))
   };
 
   return (
